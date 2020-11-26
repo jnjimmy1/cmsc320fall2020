@@ -108,30 +108,7 @@ plt.plot(gen_data_x, dummy)</code></pre>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Project 4: Interactive Data Maps</title>
-  <meta name="Author" content="CMSC320">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.6">
-  <style type="text/css">
-    p.p3 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 17.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    p.p4 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.0px Courier; color: #1d1d1d; -webkit-text-stroke: #1d1d1d; background-color: #efefef}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.0px Courier; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    p.p8 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #205097; -webkit-text-stroke: #205097}
-    li.li4 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.6px Courier; font-kerning: none; background-color: rgba(0, 0, 0, 0.035)}
-    span.s3 {-webkit-text-stroke: 0px #000000}
-    span.s4 {font-kerning: none; color: #1d1d1d; -webkit-text-stroke: 0px #1d1d1d}
-    span.s5 {text-decoration: underline ; font-kerning: none; color: #205097; -webkit-text-stroke: 0px #205097}
-    ol.ol1 {list-style-type: decimal}
-  </style>
-</head>
+
 <body>
 <h1 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 45.0px; font: 38.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Project 4: Interactive Data Maps</span></h1>
 <h4 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 22.0px; font: 18.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1"><i>CMSC320</i></span></h4>
