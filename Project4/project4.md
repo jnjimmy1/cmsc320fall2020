@@ -156,7 +156,7 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <ol class="ol1">
   <li class="li4"><span class="s3"></span><span class="s1">Add graphical elements to display the data. For instance, add circles, with colors indicating sex. Or circles with colors indicating race. Or anything else that strikes your fancy.<br>
 </span></li>
-  <li class="li4"><span class="s3"></span><span class="s1">Embed your map in your iPynb notebook and submit to ELMS .<br>
+  <li class="li4"><span class="s3"></span><span class="s1">Embed your map in your iPynb notebook.<br>
 </span></li>
 </ol>
 <h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 36.0px; font: 30.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Submission</span></h2>
