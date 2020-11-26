@@ -104,3 +104,91 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <li><p>Include all code required to perform the 10-fold cross-validation procedure on your three algorithms.</p></li>
 <li><p>Writeup the result of your 10-fold cross-validation procedure. Make sure to report the 10-fold CV error estimate (with standard error) of each of the three algorithms. Also report on the result of the <em>two</em> paired t-tests comparing your logistic regression algorithm with your chosen two algorithms.</p></li>
 </ol>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Project 4: Interactive Data Maps</title>
+  <meta name="Author" content="CMSC320">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+    p.p3 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 17.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p4 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.0px Courier; color: #1d1d1d; -webkit-text-stroke: #1d1d1d; background-color: #efefef}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.0px Courier; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p8 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #205097; -webkit-text-stroke: #205097}
+    li.li4 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 14.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.6px Courier; font-kerning: none; background-color: rgba(0, 0, 0, 0.035)}
+    span.s3 {-webkit-text-stroke: 0px #000000}
+    span.s4 {font-kerning: none; color: #1d1d1d; -webkit-text-stroke: 0px #1d1d1d}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #205097; -webkit-text-stroke: 0px #205097}
+    ol.ol1 {list-style-type: decimal}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 45.0px; font: 38.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Project 4: Interactive Data Maps</span></h1>
+<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 22.0px; font: 18.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1"><i>CMSC320</i></span></h4>
+<p class="p3"><span class="s1"><b>Posted: November 25, 2020</b><br>
+<b>Due: December 8, 2020</b><br>
+</span></p>
+<p class="p4"><span class="s1">Use the </span><span class="s2">Folium</span><span class="s1"> package and our Baltimore crime dataset to make an interactive data map of Baltimore Crime.</span></p>
+<ol class="ol1">
+  <li class="li5"><span class="s3"></span><span class="s1">Use this piece of code to download and prepare data for use in project</span></li>
+</ol>
+<p class="p6"><span class="s1">!pip install folium</span></p>
+<p class="p6"><span class="s1">import folium</span></p>
+<p class="p6"><span class="s1">import requests</span></p>
+<p class="p6"><span class="s1">import pandas</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">arrest_table = pandas.read_csv("http://www.hcbravo.org/IntroDataSci/misc/BPD_Arrests.csv")</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">arrest_table["race_new"] = arrest_table["sex"]</span></p>
+<p class="p6"><span class="s1">arrest_table["sex_new"] = arrest_table["race"]</span></p>
+<p class="p6"><span class="s1">arrest_table["race"] = arrest_table["race_new"]</span></p>
+<p class="p6"><span class="s1">arrest_table["sex"] = arrest_table["sex_new"]</span></p>
+<p class="p6"><span class="s1">arrest_table = arrest_table.drop('race_new', 1)</span></p>
+<p class="p6"><span class="s1">arrest_table = arrest_table.drop('sex_new', 1)</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">arrest_table = arrest_table[pandas.notnull(arrest_table["Location 1"])]</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">arrest_table["lat"], arrest_table["long"] = arrest_table["Location 1"].str.split(",").str</span></p>
+<p class="p6"><span class="s1">arrest_table["lat"] = arrest_table["lat"].str.replace("(", "").astype(float)</span></p>
+<p class="p6"><span class="s1">arrest_table["long"] = arrest_table["long"].str.replace(")", "").astype(float)</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">arrest_table.head()</span></p>
+<ol class="ol1">
+  <li class="li5"><span class="s3"></span><span class="s1">Use the </span><span class="s2">folium</span><span class="s1"> package to create an interactive map of Baltimore</span></li>
+</ol>
+<p class="p6"><span class="s1">map_osm = folium.Map(location=[39.29, -76.61], zoom_start=11)</span></p>
+<p class="p6"><span class="s1">map_osm</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p8"><span class="s4">You can find more information about folium here: <a href="https://github.com/python-visualization/folium"><span class="s5">https://github.com/python-visualization/folium/</span></a> and <a href="https://folium.readthedocs.org/"><span class="s5">https://folium.readthedocs.org//</span></a></span></p>
+<ol class="ol1">
+  <li class="li4"><span class="s3"></span><span class="s1">Add graphical elements to display the data. For instance, add circles, with colors indicating sex. Or circles with colors indicating race. Or anything else that strikes your fancy.<br>
+</span></li>
+  <li class="li4"><span class="s3"></span><span class="s1">Embed your map in your iPynb notebook and submit to ELMS .<br>
+</span></li>
+</ol>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 36.0px; font: 30.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Submission</span></h2>
+<p class="p4"><span class="s1">Prepare and an iPynb notebook that includes: (a) code to carry out each of the steps above, (b) output showing the result of your code (in this case the interactive map), and (c) a short prose description of your interactive map (i.e., what are you showing with this data and map). Remember, the writeup you are preparing is intended to communicate your data analysis effectively. Thoughtlessly showing large amounts of output in your writeup defeats that purpose. This will lead nicely into your final tutorial.</span></p>
+<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 29.0px; font: 24.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Group work</span></h3>
+<p class="p4"><span class="s1">Working in groups in this project is encouraged but not required. If working on a group: (1) groups can be of 2 or 3 people, and (2) in all cases, names of peers who worked in the group should be included in the writeup.</span></p>
+<p class="p4"><span class="s1">As with all group work, and reflective of academic ethics code, there is an expectation that all group members will contribute equally in design, implementation and reporting of this work. If any student feels this expectation was not met when working on this project, they should contact the instructor team who will handle the situation as expediently and fairly as possible.</span></p>
+<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 29.0px; font: 24.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Submission</span></h3>
+<p class="p5"><span class="s1">Submit an .ipynb file to ELMS as usual.<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
+
