@@ -160,12 +160,12 @@ plt.plot(gen_data_x, dummy)</code></pre>
 </span></li>
 </ol>
 <h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 36.0px; font: 30.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Submission</span></h2>
-<p class="p4"><span class="s1">Prepare and an iPynb notebook that includes: (a) code to carry out each of the steps above, (b) output showing the result of your code (in this case the interactive map), and (c) a short prose description of your interactive map (i.e., what are you showing with this data and map). Remember, the writeup you are preparing is intended to communicate your data analysis effectively. Thoughtlessly showing large amounts of output in your writeup defeats that purpose. This will lead nicely into your final tutorial.</span></p>
+<p class="p4"><span class="s1">Prepare an iPynb notebook that includes: (a) code to carry out each of the steps above, (b) output showing the result of your code (for both classification and the interactive map), and (c) a short prose description of your classification code and the part for interactive map (i.e., what are you showing with this data and map). Remember, the writeup you are preparing is intended to communicate your data analysis effectively. Thoughtlessly showing large amounts of output in your writeup defeats that purpose. This will lead nicely into your final tutorial.</span></p>
 <h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 29.0px; font: 24.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Group work</span></h3>
 <p class="p4"><span class="s1">Working in groups in this project is encouraged but not required. If working on a group: (1) groups can be of 2 or 3 people, and (2) in all cases, names of peers who worked in the group should be included in the writeup.</span></p>
 <p class="p4"><span class="s1">As with all group work, and reflective of academic ethics code, there is an expectation that all group members will contribute equally in design, implementation and reporting of this work. If any student feels this expectation was not met when working on this project, they should contact the instructor team who will handle the situation as expediently and fairly as possible.</span></p>
 <h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 29.0px; font: 24.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Submission</span></h3>
-<p class="p5"><span class="s1">Submit an .ipynb file to ELMS as usual.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Submit an .ipynb file to ELMS  and a .pdf to Gradescope as usual.<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
 
