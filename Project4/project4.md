@@ -125,7 +125,7 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <p class="p6"><span class="s1">import pandas</span></p>
 <p class="p7"><span class="s1"><br>
 </span></p>
-<p class="p6"><span class="s1">arrest_table = pandas.read_csv("http://www.hcbravo.org/IntroDataSci/misc/BPD_Arrests.csv")</span></p>
+<p class="p6"><span class="s1">arrest_table = pandas.read_csv("BPD_Arrests.csv")</span></p>
 <p class="p7"><span class="s1"><br>
 </span></p>
 <p class="p6"><span class="s1">arrest_table["race_new"] = arrest_table["sex"]</span></p>
