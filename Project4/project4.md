@@ -7,7 +7,7 @@ Due: December 8, 2020
 
 
 
-## Part I Classification
+## Part I: Classification
 
 ### Gradient Descent
 
