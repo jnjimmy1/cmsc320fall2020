@@ -7,7 +7,7 @@ Due: December 8, 2018
 
 
 
-## Classification
+## Part I Classification
 
 ### Gradient Descent
 
@@ -110,11 +110,11 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <html>
 
 <body>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 45.0px; font: 38.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Project 4: Interactive Data Maps</span></h1>
-<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 22.0px; font: 18.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1"><i>CMSC320</i></span></h4>
+<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 45.0px; font: 38.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1">Part II: Interactive Data Maps</span></h1>
+<!-- <h4 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 22.0px; font: 18.0px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d"><span class="s1"><i>CMSC320</i></span></h4>
 <p class="p3"><span class="s1"><b>Posted: November 25, 2020</b><br>
 <b>Due: December 8, 2020</b><br>
-</span></p>
+</span></p> -->
 <p class="p4"><span class="s1">Use the </span><span class="s2">Folium</span><span class="s1"> package and our Baltimore crime dataset to make an interactive data map of Baltimore Crime.</span></p>
 <ol class="ol1">
   <li class="li5"><span class="s3"></span><span class="s1">Use this piece of code to download and prepare data for use in project</span></li>
