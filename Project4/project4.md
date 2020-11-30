@@ -126,7 +126,7 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <p class="p7"><span class="s1"><br>
 </span></p>
 <p class="p6"><span class="s1">arrest_table = pandas.read_csv("https://github.com/nayeemmz/cmsc320fall2020/blob/master/Project4/BPD_Arrests.csv")</span></p>
-<p class="p7"><span class="s1"><br>
+<!-- <p class="p7"><span class="s1"><br>
 </span></p>
 <p class="p6"><span class="s1">arrest_table["race_new"] = arrest_table["sex"]</span></p>
 <p class="p6"><span class="s1">arrest_table["sex_new"] = arrest_table["race"]</span></p>
@@ -135,7 +135,7 @@ plt.plot(gen_data_x, dummy)</code></pre>
 <p class="p6"><span class="s1">arrest_table = arrest_table.drop('race_new', 1)</span></p>
 <p class="p6"><span class="s1">arrest_table = arrest_table.drop('sex_new', 1)</span></p>
 <p class="p7"><span class="s1"><br>
-</span></p>
+</span></p> -->
 <p class="p6"><span class="s1">arrest_table = arrest_table[pandas.notnull(arrest_table["Location 1"])]</span></p>
 <p class="p7"><span class="s1"><br>
 </span></p>
